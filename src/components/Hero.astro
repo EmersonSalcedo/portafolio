@@ -1,0 +1,67 @@
+---
+const personalImageAlt = "Emerson Salcedo";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/perfil-green.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/emerson-salcedo/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl sm:leading-[1.2] dark:text-white sm:border-solid block sm:w-[24ch] text-wrap sm:text-nowrap overflow-hidden sm:border-r-4 whitespace-nowrap write"
+  >
+    Hola mundo, soy Emerson Salcedo
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-green-200 [&>strong]:text-green-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    <strong
+      >Full-Stack Developer</strong
+    > de Cartagena, Colombia. Especializado en el desarrollo de aplicaciones web
+    únicas con las tecnologías Angular y Java Springboot.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:emersondavid501@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/emerson-salcedo/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
+<style>
+  @media (width > 820px) {
+    .write {
+      animation:
+        typing 3s steps(24),
+        blink 0.5s infinite step-end alternate;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  }
+</style>

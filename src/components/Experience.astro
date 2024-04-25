@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingeniería de Sistemas y Computación",
+    company: "Fundación Universitaria Los Libertadores",
+    description:
+      "El programa de Ingeniería de Sistemas y Computación se orienta a la formación de profesionales integrales, con énfasis en el área de sistemas y ciencias de la computación, capacitados para planear, diseñar, implementar y evaluar sistemas computacionales, innovando a partir de la construcción y desarrollo de ideas.",
+  },
+  {
+    date: "Junio 2023",
+    title: "Programa Oracle Next Education F2 T4 Back-end",
+    company: "Alura Latam",
+    description:
+      "ONE es un programa de educación, y empleabilidad con el objetivo social de capacitar personas en tecnología y conectarlas con el mercado de trabajo a través de las empresas asociadas.",
+      link: "https://app.aluracursos.com/program/certificate/4864bfe2-4d9a-4dde-907c-1afbb8f55e57",
+  },
+  {
+    date: "Agosto 2022",
+    title: "Diplomado en Desarrollo de Software",
+    company: "Universidad del Norte",
+    description:
+      "Este programa prepara a los participantes para enfrentar los desafíos del desarrollo de software de alta calidad. Cubre aspectos como trabajo colaborativo, bases de datos, tecnologías front-end (React), back-end (Node.js), Flutter para aplicaciones móviles y Firebase para la gestión de datos. Se enfoca en una metodología teórico-práctica, fomentando el aprendizaje colaborativo y basado en proyectos.",
+      link: "https://uninorte.evolutool.com/index.php/6fe238abab086f347e5f52ade5889a36/862f45c4168a6126fe59a89625829759",
+  },
+  {
+    date: "Diciembre 2021",
+    title: "Misión TIC 2022",
+    company: "Universidad del Norte",
+    description:
+      "El programa de Misión TIC 2022 es liderado por el Gobierno del Presidente Iván Duque con el objetivo de formar 100.000 jóvenes y adultos colombianos en programación, para enfrentar los desafíos de la Cuarta Revolución Industrial.",
+      link: "https://tananeo.uninorte.edu.co/certificados/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
